@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>traveloverservlets</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+   </welcome-file-list>
+   
+   <!--  context started  -->
+   <!--  servlet configuration starts  -->
+   <servlet>
+   <servlet-name>firstservlet</servlet-name>
+   <servlet-class>com.dhathika.packone.ServletOne</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>firstservlet</servlet-name>
+   <url-pattern>/one</url-pattern>
+   </servlet-mapping>
+    <!--  servlet configuration ends   -->
+    
+    
+    
+    
+    
+    <!--  servlet configuration starts  -->
+   <servlet>
+   <servlet-name>secondservlet</servlet-name>
+   <servlet-class>com.dhathika.packone.BalajiServlet</servlet-class>
+    <init-param>
+   <param-name>name</param-name>
+   <param-value>VishnuPriya</param-value>
+   </init-param>
+    <init-param>
+   <param-name>address</param-name>
+   <param-value>chittoor</param-value>
+   </init-param>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>secondservlet</servlet-name>
+    <url-pattern>/two</url-pattern>
+   </servlet-mapping>
+       <!--  servlet configuration ends   -->
+       
+       
+       
+       
+         <!--  servlet configuration starts  -->
+    <servlet>
+   <servlet-name>thirdservlet</servlet-name>
+   <servlet-class>com.dhathika.packone.ThirdServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>thirdservlet</servlet-name>
+    <url-pattern>/three</url-pattern>
+   </servlet-mapping>
+       <!--  servlet configuration ends   -->
+       
+       
+       
+   <context-param>
+   <param-name>cname</param-name>
+   <param-value>travelservletproject</param-value>
+   </context-param>
+   
+   
+   
+       <!--  context ended  -->
+</web-app>
